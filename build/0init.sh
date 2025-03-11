@@ -23,6 +23,9 @@ if [[ $started == *"1"* ]]
     # pulumi for ias
     curl -fsSL https://get.pulumi.com | sh
 
+    # plop template generator
+    npm install -g plop
+
     # update our json to indicate that we've successfully completed initial startup, so that next start we won't
     # rerun all of this
     startup=$(jq --null-input '{"started":1}')
