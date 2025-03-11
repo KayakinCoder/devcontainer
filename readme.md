@@ -1,0 +1,1 @@
+A devcontainer with tools and scripts I like to use as a base for development. 
