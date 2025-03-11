@@ -9,5 +9,28 @@
   // because it runs a little later after the container has been attached to. this helps ensure docker
   // containers get up and running reliably -- if we try to spin up the docker containers too early, the machine
   // isn't ready
-  // "postAttachCommand": "bash /workspaces/devcontainer/0init.sh",  
+  "postAttachCommand": "bash /workspaces/devcontainer/0init.sh",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "graphql.vscode-graphql-syntax",
+        "dbaeumer.vscode-eslint",
+        "redhat.vscode-yaml",
+        "ms-azuretools.vscode-azurefunctions",
+        "ethansk.restore-terminals"
+      ]
+    }
+    // "codespaces": {
+    //   // grant rw permissions to other repos we use
+    //   "repositories": {
+    //     "somerepo": {
+    //       "permissions": {
+    //         "contents": "write"
+    //       }
+    //     }
+    //   }
+    // }
+  }
 }
