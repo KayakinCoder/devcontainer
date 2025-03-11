@@ -1,0 +1,1 @@
+React latest stable version, built with vite
