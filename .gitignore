@@ -1,2 +1,2 @@
 # tells each workspace whether its the first startup or not
-/workspaces/build/started.json
+workspaces/build/started.json
