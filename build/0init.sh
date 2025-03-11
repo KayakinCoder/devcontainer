@@ -3,13 +3,12 @@
 
 sudo apt-get update
 
-# udpate npm
-npm install npm@latest -g
-
 # node is installed in the image, here we use nvm to set our version
-# importantly, nvm has to be sorced, not called. thus the . notation
-# also importantly, we must set our current version to the default
+# importantly, nvm has to be sorced, not called. thus the . notation. also importantly, we must set our current version to the default
 . /usr/local/share/nvm/nvm.sh && nvm install --lts && nvm use --lts && nvm alias default node
+
+# udpate npm. note this needs to come after nvm node install, since npm is updated more frequently than node
+npm install npm@latest -g
 
 # install the neon.tech cli for postgres bliss
 sudo npm i -g neonctl

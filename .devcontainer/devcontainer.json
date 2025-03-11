@@ -9,7 +9,7 @@
   // because it runs a little later after the container has been attached to. this helps ensure docker
   // containers get up and running reliably -- if we try to spin up the docker containers too early, the machine
   // isn't ready
-  // "postAttachCommand": "bash /workspaces/devcontainer/build/0init.sh",
+  "postAttachCommand": "bash /workspaces/devcontainer/build/0init.sh",
 
   "customizations": {
     "vscode": {
