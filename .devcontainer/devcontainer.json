@@ -3,7 +3,7 @@
   // "forwardPorts": [3007],
 
   // this runs only once, during prebuild
-  // "onCreateCommand": "bash /workspaces/devcontainer/0prebuild.sh",
+  "onCreateCommand": "bash /workspaces/devcontainer/build/0prebuild.sh",
 
   // this runs every time the end-user starts the codespace. use postAttachCommand instead of postStartCommand 
   // because it runs a little later after the container has been attached to. this helps ensure docker
