@@ -1,0 +1,23 @@
+{
+  "artificialDelayMilliseconds": 1000,
+  "keepExistingTerminalsOpen": false,
+  "runOnStartup": false,
+  "terminals": [
+    {
+      "splitTerminals": [
+        {
+          "name": "tools",
+          "commands": ["sleep 1", "cd /workspaces/tools"]
+        }
+      ]
+    },
+    {
+      "splitTerminals": [
+        {
+          "name": "bash",
+          "commands": ["sleep 1", "cd /workspaces"]
+        }
+      ]
+    }
+  ]
+}
