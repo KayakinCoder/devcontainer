@@ -21,16 +21,16 @@
         "ms-azuretools.vscode-azurefunctions",
         "ethansk.restore-terminals"
       ]
+    },
+    "codespaces": {
+      // grant rw permissions to other repos
+      "repositories": {
+        "KayakinCoder/pulumi": {
+          "permissions": {
+            "contents": "write"
+          }
+        }
+      }
     }
-    // "codespaces": {
-    //   // grant rw permissions to other repos we use
-    //   "repositories": {
-    //     "somerepo": {
-    //       "permissions": {
-    //         "contents": "write"
-    //       }
-    //     }
-    //   }
-    // }
   }
 }
