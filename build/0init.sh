@@ -10,18 +10,15 @@ if [[ $started == *"1"* ]]
   else
     sudo apt-get update
 
+    # this will hold any optional tools/repos we want to load
+    mkdir /workspaces/tools
+
     # node is installed in the image, here we use nvm to set our version
     # importantly, nvm has to be sorced, not called. thus the . notation. also importantly, we must set our current version to the default
     . /usr/local/share/nvm/nvm.sh && nvm install --lts && nvm use --lts && nvm alias default node
 
     # udpate npm. note this needs to come after nvm node install, since npm is updated more frequently than node
     npm install npm@latest -g
-
-    # install the neon.tech cli for postgres bliss
-    sudo npm i -g neonctl
-
-    # pulumi for ias
-    curl -fsSL https://get.pulumi.com | sh
 
     # plop template generator
     npm install -g plop
@@ -34,8 +31,5 @@ fi
 
 # let the user know what versions are installed
 printf "___________________ \n\n"
-# note that pulumi isnt in path during initial startup, so this wont work in that specific case
-printf "pulumi version: %s\n" $(pulumi version)
 printf "npm version: %s\n" $(npm --version)
 printf "node version: %s\n" $(node --version)
-printf "neon cli version: %s\n" $(neonctl --version)
