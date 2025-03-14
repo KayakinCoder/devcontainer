@@ -29,6 +29,11 @@
           "permissions": {
             "contents": "write"
           }
+        },
+        "KayakinCoder/redis": {
+          "permissions": {
+            "contents": "write"
+          }
         }
       }
     }
