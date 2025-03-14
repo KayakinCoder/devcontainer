@@ -1,8 +1,9 @@
 {
   /** define ports for various tools
         6379: tools/redis
+        3000: tools/redis/express 
   */
-  "forwardPorts": [6379],
+  "forwardPorts": [6379, 3000],
 
   // this runs only once, during prebuild
   // "onCreateCommand": "bash /workspaces/devcontainer/build/0prebuild.sh",
