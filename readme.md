@@ -1,6 +1,10 @@
 A devcontainer with tools and scripts I like to use as a base for development.
 
-Tools and repos:
+### How To
+
+Auth to AWS SSO: `aws sso login --sso-session terraform-dev`
+
+### Tools and Repos
 
 ````bash
 # terraform repo that has some common cloud resource builds
