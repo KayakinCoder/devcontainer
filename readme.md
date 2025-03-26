@@ -19,3 +19,8 @@ source /workspaces/devcontainer/tools/repo-redis.sh
 # neon.tech for postgres
 source /workspaces/devcontainer/tools/neontech.sh
 ````
+
+### Prereqs
+
+- Create an env var for GH Codespaces named CS_ENVVAR_AWSSSOURL, that contains your AWS SSO (Identity Center) endpoint. This is used in tools like terraform, pulumi, etc. to auth to AWS:
+https://someurl.awsapps.com/start
