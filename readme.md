@@ -1,4 +1,7 @@
-A devcontainer with tools and scripts I like to use as a base for development.
+A devcontainer with tools and scripts I like to use as a base for development. If you've found this on the interwebs, in a nutshell:
+- Dev containers are awesome, they allow you to create a reproducible local dev setup
+- This repo contains my personal dev container setup with some tools, script, aliases, repos etc. that I often use
+- It's probably not a good idea to use this repo directly, but hopefully it gives you some ideas on setting up your own dev container
 
 ### Tools and Repos
 

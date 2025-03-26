@@ -24,7 +24,10 @@ if [[ $started == *"1"* ]]
     npm install -g plop
 
     # aws cli
-    source /workspaces/devcontainer/tools/subtools/aws.sh
+    source /workspaces/devcontainer/tools/subtools/aws-cli-install.sh
+
+    # set up aws sso auth config
+    source /workspaces/devcontainer/tools/subtools/aws-creds.sh
 
     # my aliases
     cp /workspaces/devcontainer/tools/.bash_aliases ~
