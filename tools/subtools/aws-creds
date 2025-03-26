@@ -1,4 +1,1 @@
-[sso-session terraform-dev]
-sso_start_url = CS_ENVVAR_AWSSSOURL
-sso_region = us-west-2
-sso_registration_scopes = sso:account:access
+CS_ENVVAR_AWSCONFIG

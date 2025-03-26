@@ -1,9 +1,5 @@
 A devcontainer with tools and scripts I like to use as a base for development.
 
-### How To
-
-Auth to AWS SSO: `aws sso login --sso-session terraform-dev`
-
 ### Tools and Repos
 
 ````bash
@@ -20,7 +16,6 @@ source /workspaces/devcontainer/tools/repo-redis.sh
 source /workspaces/devcontainer/tools/neontech.sh
 ````
 
-### Prereqs
+### AWS Auth
 
-- Create an env var for GH Codespaces named CS_ENVVAR_AWSSSOURL, that contains your AWS SSO (Identity Center) endpoint. This is used in tools like terraform, pulumi, etc. to auth to AWS:
-https://someurl.awsapps.com/start
+Some tools e.g. Terraform, Pulumi require authing to AWS. This is done by creating a ~/.aws/config file when this devcontainer spins up. In GH Codepsaces you should create an env var CS_ENVVAR_AWSCONFIG that has the full contents of your config file; those contents will automatically populated into .aws/config when the devcontainer is first created.

@@ -4,8 +4,6 @@ if ! test -f ~/.aws/config; then
   cp /workspaces/devcontainer/tools/subtools/aws-creds ~/.aws
   mv ~/.aws/aws-creds ~/.aws/config
 
-  # replace CS_ENVVAR_AWSSSOURL with my actual aws sso endpoint. this is an GH Codespaces scoped env var
-  sed -i "s@CS_ENVVAR_AWSSSOURL@$CS_ENVVAR_AWSSSOURL@g" ~/.aws/config
-
-  # replace placeholder with github codespaces env vars
+  # replace CS_ENVVAR_AWSCONFIG with my aws config file contents. CS_ENVVAR_AWSCONFIG is a GH codespaces scoped env var
+  sed -i "s@CS_ENVVAR_AWSCONFIG@$CS_ENVVAR_AWSCONFIG@g" ~/.aws/config
 fi
