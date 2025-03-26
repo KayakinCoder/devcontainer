@@ -23,6 +23,9 @@ if [[ $started == *"1"* ]]
     # plop template generator
     npm install -g plop
 
+    # aws cli
+    source /workspaces/devcontainer/tools/subtools/aws.sh
+
     # update our json to indicate that we've successfully completed initial startup, so that next start we won't
     # rerun all of this
     startup=$(jq --null-input '{"started":1}')
@@ -31,5 +34,6 @@ fi
 
 # let the user know what versions are installed
 printf "___________________ \n\n"
+aws --version
 printf "npm version: %s\n" $(npm --version)
 printf "node version: %s\n" $(node --version)

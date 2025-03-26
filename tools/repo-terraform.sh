@@ -1,3 +1,6 @@
+# download and install the aws cli, which we'll need to provision resources
+source /workspaces/devcontainer/tools/subtools/aws-cli-install.sh
+
 # download/install terraform cli
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 sudo apt update
