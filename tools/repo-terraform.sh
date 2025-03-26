@@ -1,6 +1,9 @@
 # download and install the aws cli, which we'll need to provision resources
 source /workspaces/devcontainer/tools/subtools/aws-cli-install.sh
 
+# set up aws sso login
+source /workspaces/devcontainer/tools/subtools/aws-creds.sh
+
 # download/install terraform cli
 cd /workspaces/devcontainer
 wget -O - https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
