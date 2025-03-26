@@ -1,3 +1,4 @@
-[default]
-aws_access_key_id=CS_ENVVAR_AWSKEY
-aws_secret_access_key=CS_ENVVAR_AWSSECRET
+[sso-session terraform-dev]
+sso_start_url = CS_ENVVAR_AWSSSOURL
+sso_region = us-west-2
+sso_registration_scopes = sso:account:access
