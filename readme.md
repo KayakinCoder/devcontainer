@@ -22,3 +22,7 @@ source /workspaces/devcontainer/tools/neontech.sh
 ### AWS Auth
 
 Some tools e.g. Terraform, Pulumi require authing to AWS. This is done by creating a ~/.aws/config file when this devcontainer spins up. In GH Codepsaces you should create an env var CS_ENVVAR_AWSCONFIG that has the full contents of your config file; those contents will automatically populated into .aws/config when the devcontainer is first created.
+
+Run this to get auth'd: 
+
+`aws sso login`
