@@ -13,6 +13,9 @@ if [[ $started == *"1"* ]]
     # this will hold any optional tools/repos we want to load
     mkdir /workspaces/tools
 
+    # python uv
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+
     # node is installed in the image, here we use nvm to set our version
     # importantly, nvm has to be sorced, not called. thus the . notation. also importantly, we must set our current version to the default
     . /usr/local/share/nvm/nvm.sh && nvm install --lts && nvm use --lts && nvm alias default node
@@ -41,5 +44,10 @@ fi
 # let the user know what versions are installed
 printf "___________________ \n\n"
 aws --version
+printf "___________________ \n\n"
 printf "npm version: %s\n" $(npm --version)
 printf "node version: %s\n" $(node --version)
+printf "___________________ \n\n"
+printf "%s %s\n" $(python --version)
+printf "%s %s\n" $(uv --version)
+printf "\n"

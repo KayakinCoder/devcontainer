@@ -42,6 +42,11 @@
           "permissions": {
             "contents": "write"
           }
+        },
+        "KayakinCoder/python-api": {
+          "permissions": {
+            "contents": "write"
+          }
         }
       }
     }

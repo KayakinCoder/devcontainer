@@ -7,16 +7,19 @@ A devcontainer with tools and scripts I like to use as a base for development. I
 
 ````bash
 # terraform repo that has some common cloud resource builds
-source /workspaces/devcontainer/tools/repo-terraform.sh
+source /workspaces/devcontainer/tools/repo_terraform.sh
 
 # pulumi repo that has some common cloud resource builds
-source /workspaces/devcontainer/tools/repo-pulumi.sh
+source /workspaces/devcontainer/tools/repo_pulumi.sh
 
 # redis local dev/db
-source /workspaces/devcontainer/tools/repo-redis.sh
+source /workspaces/devcontainer/tools/repo_redis.sh
 
 # neon.tech for postgres
 source /workspaces/devcontainer/tools/neontech.sh
+
+# basic python rest api
+source /workspaces/devcontainer/tools/repo_python-api.sh
 ````
 
 ### AWS Auth
