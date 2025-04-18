@@ -48,6 +48,6 @@ printf "___________________ \n\n"
 printf "npm version: %s\n" $(npm --version)
 printf "node version: %s\n" $(node --version)
 printf "___________________ \n\n"
-printf "%s %s\n" $(python --version)
-printf "%s %s\n" $(uv --version)
+echo $(python --version)
+echo $(uv --version)
 printf "\n"
