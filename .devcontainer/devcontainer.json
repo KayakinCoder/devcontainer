@@ -1,7 +1,7 @@
 {
   /** define ports for various tools
         6379: tools/redis
-        3000: tools/redis/express 
+        3000: tools/redis/express...tools/python-api
   */
   "forwardPorts": [6379, 3000],
 
