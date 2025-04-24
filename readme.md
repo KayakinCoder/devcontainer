@@ -20,6 +20,9 @@ source /workspaces/devcontainer/tools/neontech.sh
 
 # basic python rest api
 source /workspaces/devcontainer/tools/repo_python-api.sh
+
+# my aws templates repo
+source /workspaces/devcontainer/tools/repo_private-aws.sh
 ````
 
 ### AWS Auth

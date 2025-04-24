@@ -47,6 +47,11 @@
           "permissions": {
             "contents": "write"
           }
+        },
+        "KayakinCoder/private-aws": {
+          "permissions": {
+            "contents": "write"
+          }
         }
       }
     }
