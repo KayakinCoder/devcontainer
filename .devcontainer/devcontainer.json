@@ -22,7 +22,12 @@
         "dbaeumer.vscode-eslint",
         "redhat.vscode-yaml",
         "ms-azuretools.vscode-azurefunctions",
-        "ethansk.restore-terminals"
+        "ethansk.restore-terminals",
+        "ms-python.debugpy",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "hashicorp.terraform",
+        "wayou.vscode-todo-highlight"
       ]
     },
     "codespaces": {
