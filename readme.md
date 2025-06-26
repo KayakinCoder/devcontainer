@@ -32,3 +32,5 @@ Some tools e.g. Terraform, Pulumi require authing to AWS. This is done by creati
 Run this to get auth'd: 
 
 `aws sso login`
+
+- Run `aws s3 ls` to see if s3 buckets can be listed/if you auth'd correctly
