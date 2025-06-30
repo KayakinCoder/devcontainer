@@ -57,6 +57,11 @@
           "permissions": {
             "contents": "write"
           }
+        },
+        "KayakinCoder/e84": {
+          "permissions": {
+            "contents": "write"
+          }
         }
       }
     }
