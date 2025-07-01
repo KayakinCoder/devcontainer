@@ -67,7 +67,32 @@
           "permissions": {
             "contents": "write"
           }
-        }
+        },
+        "KayakinCoder/uis-private": {
+          "permissions": {
+            "contents": "write"
+          }
+        },
+        "KayakinCoder/be-private": {
+          "permissions": {
+            "contents": "write"
+          }
+        },
+        "KayakinCoder/devcontainer-private": {
+          "permissions": {
+            "contents": "write"
+          }
+        },
+        "KayakinCoder/wcl-private": {
+          "permissions": {
+            "contents": "write"
+          }
+        },        
+        "KayakinCoder/dbt-bigquery-private": {
+          "permissions": {
+            "contents": "write"
+          }
+        }                           
       }
     }
   }
