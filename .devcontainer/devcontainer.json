@@ -63,17 +63,7 @@
             "contents": "write"
           }
         },
-        "languageconvo/uis": {
-          "permissions": {
-            "contents": "write"
-          }
-        },
-        "languageconvo/be": {
-          "permissions": {
-            "contents": "write"
-          }
-        },
-        "languageconvo/pulumi": {
+        "KayakinCoder/pulumi-private": {
           "permissions": {
             "contents": "write"
           }
